@@ -1,0 +1,110 @@
+.navbar {
+  background-color: #f8f9fa;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  min-height: 5vh;
+}
+.navbar .navElements {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .navElements .icons {
+  display: flex;
+  padding-left: 5px;
+}
+.navbar .navElements .icons .icon {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+}
+.navbar .navElements .icons .icon:hover {
+  color: #ffb400;
+}
+.navbar .navElements .contact {
+  display: flex;
+}
+.navbar .navElements .contact .contactIcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 16px;
+  padding-right: 7px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar .navElements .contact .contactIcon .icon {
+  color: #ffb400;
+  font-size: 13px;
+  padding-right: 5px;
+}
+
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  min-height: 5vh;
+}
+.header .headerElement {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .headerElement .selling {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+.header .headerElement .selling h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+}
+.header .headerElement .selling h1 span {
+  width: 100px;
+  height: 100px;
+  color: #ffb400;
+}
+
+.header .headerElement .listnavigate .lists {
+  list-style: none;
+  display: flex;
+}
+.header .headerElement .listnavigate .lists .list {
+  padding-right: 30px;
+}
+.header .headerElement .listnavigate .lists .list .link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+.header .headerElement .listnavigate .lists .list .link:hover {
+  color: #ffb400;
+}
+.header .headerElement .menubar .icon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .navElements .contact .contactIcon .contactWith {
+    display: none;
+  }
+  .header .headerElement .listnavigate .lists .list {
+    display: none;
+  }
+  .header .headerElement .menubar .icon {
+    display: block;
+  }
+}
